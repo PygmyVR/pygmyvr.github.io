@@ -6,47 +6,51 @@ body, h1, h2, p {
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Add transparency to the header */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    background-color: #333; /* Dark background for the header */
+    text-align: center;
+    padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+/* Logo Styles */
+header img {
+    max-width: 150px; /* Adjust the logo size as needed */
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Background Image Styles */
 .background-image {
     /* Set your background image here */
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%); /* Add a slight dark filter to the image for a cool effect */
 }
 
-/* Tagline Styles */
 .tagline {
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
 }
 
 /* About Section Styles (customize as needed) */
-.about-content {
+.about {
+    background-color: #222; /* Dark background for the section */
     padding: 50px;
     text-align: center;
+    color: white;
 }
 
 /* Add more CSS for other sections as needed */
